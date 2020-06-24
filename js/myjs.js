@@ -14,27 +14,22 @@ var studenti = [
   {
   'nome' : 'Crescenzo',
   'cognome' : 'De Martino',
-  'eta' : '25',
   },
   {
   'nome' : 'Mariangela',
   'cognome' : 'Fantozzi',
-  'eta' : '72',
   },
   {
   'nome' : 'Paolo',
   'cognome' : 'Paoletti',
-  'eta' : '29',
   },
   {
   'nome' : 'Trick',
   'cognome' : 'Treat',
-  'eta' : '33',
   },
   {
-    'nome' : 'Nonno',
+  'nome' : 'Nonno',
   'cognome' : 'Anselmo',
-  'eta' : '75',
   },
 ]
 
@@ -46,7 +41,6 @@ var eta = prompt('Quanti anni hai?');
 var nuovoStudente = {
   'nome' : nome,
   'cognome' : cognome,
-  'eta' : eta,
 };
 studenti.push(nuovoStudente);
 console.log(studenti);
@@ -54,7 +48,7 @@ console.log(studenti);
 // Inserisco in HTML tramite JQ risultato array aggiornato con nome inserito dall'user tramite un ciclo for
 for (var i = 0; i < studenti.length; i++) {
   var result = studenti[i];
-  $('.iscritti').append(' nome : ' + result.nome + '  / cognome : ' + result.cognome + '  / età : ' + result.eta + '<br>');
+  $('.iscritti').append(' nome : ' + result.nome + '  / cognome : ' + result.cognome + '<br>');
 }
 
 });
