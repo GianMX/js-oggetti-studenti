@@ -14,24 +14,33 @@ var studenti = [
   {
   'nome' : 'Crescenzo',
   'cognome' : 'De Martino',
+  'eta' : '25',
   },
   {
   'nome' : 'Mariangela',
   'cognome' : 'Fantozzi',
+  'eta' : '72',
   },
   {
   'nome' : 'Paolo',
   'cognome' : 'Paoletti',
+  'eta' : '29',
   },
   {
   'nome' : 'Trick',
   'cognome' : 'Treat',
+  'eta' : '33',
   },
   {
   'nome' : 'Nonno',
   'cognome' : 'Anselmo',
+  'eta' : '75',
   },
 ]
+for (var i = 0; i < studenti.length; i++) {
+  var nomeCognome = studenti[i]
+  console.log('Nome:' + nomeCognome.nome + '  Cognome:' + nomeCognome.cognome)
+}
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 var nome = prompt('Come ti chiami?');
@@ -41,6 +50,7 @@ var eta = prompt('Quanti anni hai?');
 var nuovoStudente = {
   'nome' : nome,
   'cognome' : cognome,
+  'eta' : eta,
 };
 studenti.push(nuovoStudente);
 console.log(studenti);
@@ -48,7 +58,7 @@ console.log(studenti);
 // Inserisco in HTML tramite JQ risultato array aggiornato con nome inserito dall'user tramite un ciclo for
 for (var i = 0; i < studenti.length; i++) {
   var result = studenti[i];
-  $('.iscritti').append(' nome : ' + result.nome + '  / cognome : ' + result.cognome + '<br>');
+  $('.iscritti').append(' nome : ' + result.nome + '  / cognome : ' + result.cognome + '  / età : ' + result.eta + '<br>');
 }
 
 });
