@@ -1,0 +1,22 @@
+* {
+  margin: auto 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MuseoModerno', cursive;
+}
+.wrap {
+  background-color: black;
+  width: 30%;
+  margin: auto;
+  height: 250px;}
+h1,p {
+  text-align: center;
+  color:white;
+}
+.head {
+  padding-bottom: 30px;
+  color: red;
+}
+.iscritti {
+  text-transform: capitalize;
+}
